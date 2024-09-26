@@ -5,7 +5,7 @@
   "description": "\"# Selenium-Demo\"",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --no-timeouts --parallel"
+    "test": "mocha --no-timeouts --parallel --reporter mochawesome --require mochawesome/register --reporter--options reportFilename=Test_Results"
   },
   "author": "",
   "license": "ISC",
@@ -13,5 +13,8 @@
     "chai": "^5.1.1",
     "mocha": "^10.7.3",
     "selenium-webdriver": "^4.25.0"
+  },
+  "devDependencies": {
+    "mochawesome": "^7.1.3"
   }
 }
